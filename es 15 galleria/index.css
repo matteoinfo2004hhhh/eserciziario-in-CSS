@@ -1,0 +1,14 @@
+.galleria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.miniatura {
+    flex: 0 0 25%;
+    margin: 10px;
+}
+
+.miniatura img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,26 @@
+.barra-progresso {
+    width: 100%;
+    background-color: #f3f3f3;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progresso {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    animation: progresso-animazione 2s ease-out infinite;
+}
+
+@keyframes progresso-animazione {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

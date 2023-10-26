@@ -1,0 +1,16 @@
+.sfondo-animato {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #3498db, #ff7675);
+    background-size: 200% auto;
+    animation: sfondo-animazione 2s infinite;
+}
+
+@keyframes sfondo-animazione {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

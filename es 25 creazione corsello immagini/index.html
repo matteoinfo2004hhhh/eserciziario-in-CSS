@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griglia di Layout con Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="carosello">
+        <img src="immagini/css.png" alt="Immagine 1">
+        <img src="immagini/js.png" alt="Immagine 2">
+        <img src="immagini/html.png" alt="Immagine 3">
+    </div>
+
+    <button class="freccia freccia-sinistra">&#9665; Prev</button>
+    <button class="freccia freccia-destra">Next &#9655;</button>
+
+    <script>
+        var index = 0;
+        var immagini = document.querySelectorAll('.carosello img');
+        var numImmagini = immagini.length;
+
+        function mostraImmagine(indice) {
+            immagini.forEach(function(img) {
+                img.style.display = 'none';
+            });
+            immagini[indice].style.display = 'block';
+        }
+
+        function immagineSuccessiva() {
+            index++;
+            if (index >= numImmagini) {
+                index = 0;
+            }
+            mostraImmagine(index);
+        }
+
+        function immaginePrecedente() {
+            index--;
+            if (index < 0) {
+                index = numImmagini - 1;
+            }
+            mostraImmagine(index);
+        }
+
+        mostraImmagine(index);
+
+        document.querySelector('.freccia-sinistra').addEventListener('click', immaginePrecedente);
+        document.querySelector('.freccia-destra').addEventListener('click', immagineSuccessiva);
+    </script>
+</body>
+</html>

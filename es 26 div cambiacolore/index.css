@@ -1,0 +1,10 @@
+.elemento-transizione {
+    width: 200px;
+    height: 200px;
+    background-color: #04ade6;
+    transition: background-color 0.3s ease;
+}
+
+.elemento-transizione:hover {
+    background-color: lightgreen;
+}

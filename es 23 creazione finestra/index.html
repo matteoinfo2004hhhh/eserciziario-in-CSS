@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griglia di Layout con Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="miaFinestraModale" class="finestra-modale">
+        <div class="finestra-modale-contenuto">
+            <span class="chiudi">&times;</span>
+            <p>Contenuto della finestra modale...</p>
+        </div>
+    </div>
+
+    <script>
+        var finestraModale = document.getElementById("miaFinestraModale");
+        finestraModale.style.display = "block";
+
+        var chiudi = document.getElementsByClassName("chiudi")[0];
+        chiudi.onclick = function() {
+            finestraModale.style.display = "none";
+        }
+    </script>
+</body>
+</html>

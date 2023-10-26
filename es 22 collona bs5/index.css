@@ -1,0 +1,11 @@
+.contenitore {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colonna {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}

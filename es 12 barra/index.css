@@ -1,0 +1,13 @@
+.barra-progresso {
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.progresso {
+    width: 70%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}

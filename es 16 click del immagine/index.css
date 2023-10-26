@@ -1,0 +1,11 @@
+.link-immagine {
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-image: url("immagini/html.png");
+    background-size: cover;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    text-decoration: none;
+}

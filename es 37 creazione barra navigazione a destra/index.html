@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+    <div class="barra-laterale" id="barra-laterale">
+        <a href="#home">Home</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+        <a href="#chiudi" class="chiudi" onclick="chiudiBarraLaterale()">&times;</a>
+    </div>
+
+    <button onclick="apriBarraLaterale()">Apri Barra Laterale</button>
+
+    <script>
+        function apriBarraLaterale() {
+            document.getElementById("barra-laterale").style.left = "0";
+        }
+
+        function chiudiBarraLaterale() {
+            document.getElementById("barra-laterale").style.left = "-250px";
+        }
+    </script>
+</body>
+</html>

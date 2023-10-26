@@ -1,0 +1,33 @@
+.barra-laterale {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.barra-laterale a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.barra-laterale a:hover {
+    color: #f1f1f1;
+}
+
+.barra-laterale .chiudi {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    font-size: 36px;
+    margin-left: 50px;
+}

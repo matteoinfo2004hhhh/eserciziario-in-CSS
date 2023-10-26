@@ -1,0 +1,22 @@
+.barra-avanzamento {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.barra-caricamento {
+    width: 0;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+@keyframes animazione-caricamento {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.barra-caricamento.animato {
+    animation: animazione-caricamento 5s linear;
+}

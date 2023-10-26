@@ -1,0 +1,9 @@
+.contenitore {
+    display: flex;
+}
+
+.colonna {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+}

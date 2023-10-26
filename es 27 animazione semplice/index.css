@@ -1,0 +1,21 @@
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    animation: animazione 2s infinite;
+}
+
+@keyframes animazione {
+    0% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: lightcoral;
+    }
+    100% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+}
