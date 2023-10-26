@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Servizi</a>
+        <a href="#">Contatti</a>
+        <a href="javascript:void(0);" class="chiudi" onclick="chiudiMenu()">&times;</a>
+    </div>
+
+    <button class="apri-menu" onclick="apriMenu()">Apri Menu</button>
+
+    <script>
+        function apriMenu() {
+            document.getElementById("menu").style.width = "250px";
+        }
+
+        function chiudiMenu() {
+            document.getElementById("menu").style.width = "0";
+        }
+    </script>
+</body>
+</html>

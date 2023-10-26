@@ -1,0 +1,73 @@
+.body{
+    background-color: gray;
+}
+
+.icona {
+    width: 200px;
+    height: 400px;
+    background-color: #ff0000;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    position: relative;
+    animation: pulsazione 2s infinite, ombra 2s infinite;
+    float: left;
+    margin: 3px;
+}
+.icona2 {
+    width: 200px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    position: relative;
+    animation: pulsazione 2s infinite, ombra 2s infinite;
+    float: left;
+    margin: 3px;
+}
+
+.icona3 {
+    width: 200px;
+    height: 400px;
+    background-color: #3cff00;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    position: relative;
+    animation: pulsazione 2s infinite, ombra 2s infinite;
+    float: left;
+    margin: 3px;
+}
+@keyframes pulsazione {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ombra {
+    0% {
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    }
+}
